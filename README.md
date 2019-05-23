@@ -9,13 +9,15 @@ iocage fetch -P dhcp=on vnet=on bpf=yes allow_raw_sockets=1 -n Organizr.json --b
 ```
 Await the creation of the Jail.
 
+Create directories and mount storage as required for further setup of the application via FreeNAS before proceeding.
+
 The config file for Organizr will need the below amended within the Jail:
 SSH into the Jail and Create/replace /usr/local/etc/nginx/nginx.conf with the following. 
 This is the default settings with comments removed and the bare minimum changes required to run Organizr.
 
 ```
 mv /usr/local/etc/nginx/nginx.conf /usr/local/etc/nginx/nginx.conf.backup
-cat > /mnt/RAID6/iocage/jails/Organizr/root/usr/local/etc/nginx/nginx.conf
+cat > /usr/local/etc/nginx/nginx.conf
 
 
 user www;
