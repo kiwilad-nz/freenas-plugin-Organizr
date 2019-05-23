@@ -55,10 +55,6 @@ include fastcgi_params;
 Create directories and mount storage as required for further setup of the application via FreeNAS.
 
 ```
-git clone https://github.com/causefx/Organizr.git /usr/local/www/Organizr
-chown -R www:www /usr/local/www /config
-sysrc nginx_enable=YES
-sysrc php_fpm_enable=YES
 service nginx start
 service php-fpm start
 ```
