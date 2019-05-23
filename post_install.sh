@@ -11,7 +11,7 @@ sed -i '' -e 's?;cgi.fix_pathinfo=1?cgi.fix_pathinfo=0?g' /usr/local/etc/php.ini
 git clone https://github.com/causefx/Organizr.git /usr/local/www/Organizr
 
 # Set permissions
-chown -R www:www /usr/local/www /config
+chown -R www:www /usr/local/www
 
 # Enable the service
 sysrc nginx_enable=YES
