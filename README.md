@@ -9,8 +9,9 @@ iocage fetch -P dhcp=on vnet=on bpf=yes allow_raw_sockets=1 -n Organizr.json --b
 ```
 Await the creation of the Jail.
 
-Create or replace /usr/local/etc/nginx/nginx.conf conf with the following. 
-This is the default with comments removed and the bare minimum changes required to run Organizr.
+The config file for Organizr will need the below amended within the Jail:
+SSH into the Jail and Create/replace /usr/local/etc/nginx/nginx.conf with the following. 
+This is the default settings with comments removed and the bare minimum changes required to run Organizr.
 
 ```
 mv /usr/local/etc/nginx/nginx.conf /usr/local/etc/nginx/nginx.conf.backup
