@@ -10,7 +10,7 @@ cd /tmp
 wget https://raw.githubusercontent.com/kiwilad-nz/freenas-plugin-Organizr/master/Organizr.json
 iocage fetch -P dhcp=on vnet=on bpf=yes allow_raw_sockets=1 -n Organizr.json --branch 'master'
 #
-iocage fstab -a Organizr /mnt/RAID1/Apps/Organizr /config nullfs rw 0 0
+iocage fstab -a Organizr /mnt/RAID6/Apps/Organizr /config nullfs rw 0 0
 #
 ```
 Await the creation of the Jail until you have been provided the Admin portal address.
