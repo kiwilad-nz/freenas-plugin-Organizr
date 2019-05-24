@@ -16,6 +16,7 @@
     "php72-sqlite3",
     "php72-zip",
     "git",
+    "wget",
     "ca_root_nss"
   ],
   "packagesite": "https://pkg.freebsd.org/FreeBSD:11:amd64/quarterly",
