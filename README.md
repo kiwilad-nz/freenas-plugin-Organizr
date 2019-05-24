@@ -9,6 +9,7 @@ NOTE: Below will need to be amended to suit your pool and directory setup as min
 cd /tmp
 wget https://raw.githubusercontent.com/kiwilad-nz/freenas-plugin-Organizr/master/Organizr.json
 iocage fetch -P dhcp=on vnet=on bpf=yes allow_raw_sockets=1 -n Organizr.json --branch 'master'
+rm /tmp/Organizr.json
 #
 iocage fstab -a Organizr /mnt/RAID6/Apps/Organizr /config nullfs rw 0 0
 #
