@@ -55,8 +55,8 @@ include fastcgi_params;
 Create directories and mount storage as required for further setup of the application via FreeNAS.
 
 ```
-service nginx start
-service php-fpm start
+iocage exec organizr service nginx restart
+iocage exec organizr service php-fpm restart
 ```
 
 Organizr should now be available at http://IP/ | http://organizr/
