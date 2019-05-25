@@ -13,11 +13,9 @@ git clone https://github.com/causefx/Organizr.git /usr/local/www/Organizr
 # Set permissions
 chown -R www:www /usr/local/www
 
-# Download/replace config and set config directory
-rm /usr/local/etc/nginx/nginx.conf
-wget -P /usr/local/etc/nginx/ https://raw.githubusercontent.com/kiwilad-nz/freenas-plugin-Organizr/master/nginx.conf
-# sysrc nginx_conf_dir=/config
-
 # Enable the service
 sysrc nginx_enable=YES
 sysrc php_fpm_enable=YES
+
+# Complete message - Print below text
+echo "Organizr Successfully Installed"
