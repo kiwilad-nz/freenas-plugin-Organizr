@@ -22,5 +22,7 @@ After you have completed the initial setup in the UI go back and do the followin
 ```
 cp -a /usr/local/www/Organizr/api/config/config.php /config/config.php
 rm /usr/local/www/Organizr/api/config/config.php
+```
+```
 ln -s /config/config.php /usr/local/www/Organizr/api/config/config.php
 ```
