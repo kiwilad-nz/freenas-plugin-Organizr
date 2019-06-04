@@ -20,6 +20,7 @@ sysrc nginx_enable=YES
 sysrc php_fpm_enable=YES
 
 # Start the service
+service nginx start
 service php-fpm start
 
 # Complete message - Print below text
