@@ -20,5 +20,5 @@ iocage exec organizr cp -a /usr/local/www/Organizr/api/config/config.php /config
 iocage exec organizr rm /usr/local/www/Organizr/api/config/config.php
 ```
 ```
-ln -s /config/config.php /usr/local/www/Organizr/api/config/config.php
+iocage exec organizr ln -s /config/config.php /usr/local/www/Organizr/api/config/config.php
 ```
