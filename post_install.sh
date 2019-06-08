@@ -10,8 +10,8 @@ sed -i '' -e 's?;date.timezone =?date.timezone = "Universal"?g' /usr/local/etc/p
 sed -i '' -e 's?;cgi.fix_pathinfo=1?cgi.fix_pathinfo=0?g' /usr/local/etc/php.ini
 
 # Clone Organizr git
-git clone https://github.com/causefx/Organizr/tree/v1-master.git /usr/local/www/Organizr
-# git clone https://github.com/causefx/Organizr.git /usr/local/www/Organizr
+# git clone https://github.com/causefx/Organizr/tree/v1-master.git /usr/local/www/Organizr
+git clone https://github.com/causefx/Organizr.git /usr/local/www/Organizr
 
 # Set permissions
 chown -R www:www /usr/local/www
