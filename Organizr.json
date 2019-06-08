@@ -14,6 +14,7 @@
     "php73-session",
     "php73-simplexml",
     "php73-sqlite3",
+    "php73-filter",
     "php73-zip",
     "git",
     "wget",
