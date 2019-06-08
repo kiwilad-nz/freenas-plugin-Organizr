@@ -16,8 +16,8 @@ Organizr should now be available at http://organizr/
 After you have completed the initial setup in the UI go back and do the following as some settings are stored in the config.php in the web directory such as homepage settings and email settings. If you ever need to recreate the jail you can omit the first 2 of the next 3 steps as this will link back to the saved settings.
 
 ```
-cp -a /usr/local/www/Organizr/api/config/config.php /config/config.php
-rm /usr/local/www/Organizr/api/config/config.php
+iocage exec organizr cp -a /usr/local/www/Organizr/api/config/config.php /config/config.php
+iocage exec organizr rm /usr/local/www/Organizr/api/config/config.php
 ```
 ```
 ln -s /config/config.php /usr/local/www/Organizr/api/config/config.php
